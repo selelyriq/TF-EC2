@@ -32,3 +32,8 @@ variable "tags" {
   type        = map(string)
   description = "The tags to use for the EC2 instance"
 }
+
+variable "subnet_id" {
+  type        = string
+  description = "The subnet ID to use for the EC2 instance"
+}

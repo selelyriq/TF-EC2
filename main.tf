@@ -12,6 +12,7 @@ resource "aws_instance" "ec2_instance" {
   instance_type = var.instance_type
   key_name      = var.key_name
   user_data     = var.user_data
+  subnet_id     = var.subnet_id
   tags          = merge(var.tags, { Name = var.name })
 }
 
